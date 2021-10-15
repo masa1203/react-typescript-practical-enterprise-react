@@ -1,16 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
-import Customer from "./components/Customer";
 
 function App() {
+  const [title, setTitle] = useState("Practical React Enterprise!");
   return (
     <div className="App">
-      <Customer
-        firstName="Masayoshi"
-        lastName="Sawada"
-        age={30}
-        isLegal={true}
-      />
+      <h1 style={{ color: "blue", marginBottom: "5pt" }}>{title}</h1>
     </div>
   );
 }
