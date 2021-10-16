@@ -8,12 +8,9 @@
 
 import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Switch, Route, BrowserRouter } from 'react-router-dom';
-
+import { BrowserRouter } from 'react-router-dom';
 import { GlobalStyle } from 'styles/global-styles';
-
 import { useTranslation } from 'react-i18next';
-import Home from 'app/views/pages/Home';
 import Routes from 'routes';
 
 export function App() {
